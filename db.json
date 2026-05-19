@@ -1,0 +1,24 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "title": "Total Users",
+      "value": "12,430"
+    },
+    {
+      "id": 2,
+      "title": "Active Sessions",
+      "value": "1,203"
+    },
+    {
+      "id": 3,
+      "title": "Errors",
+      "value": "32"
+    },
+    {
+      "id": 4,
+      "title": "Build Success",
+      "value": "98%"
+    }
+  ]
+}

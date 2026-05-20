@@ -13,7 +13,7 @@ function MainLayout({ children }: Props) {
       <div className="flex-1 flex flex-col">
         <Navbar />
 
-        <main className="p-6">{children}</main>
+        <main className="!p-4">{children}</main>
       </div>
     </div>
   );

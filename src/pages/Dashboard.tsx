@@ -1,5 +1,10 @@
 import MainLayout from "../components/MainLayout";
-import StatsCard from "../components/dashboard/StatsCards";
+
+import UsersChart from "../components/charts/UsersChart";
+
+import { useUserAnalytics } from "../hooks/useUsersAnalytics";
+
+import StatsGrid from "../components/dashboard/StatsGrid";
 
 import { useQuery } from "@tanstack/react-query";
 
@@ -12,7 +17,7 @@ type StatsItem = {
 };
 
 function Dashboard() {
-  const { data, isLoading, error } = useQuery({
+  const { data, isLoading, error } = useQuery<StatsItem[]>({
     queryKey: ["stats"],
     queryFn: getStats,
   });
@@ -22,18 +27,18 @@ function Dashboard() {
   }
 
   if (error) {
-    return <p>Something went wrong</p>;
+    return <p> Something is wrong..</p>;
   }
+
+  const analyticsQuery = useUsersAnalytics();
 
   return (
     <MainLayout>
       <h1 className="text-3xl font-bold mb-6">Developer Analytics</h1>
 
-      <div className="grid grid-cols-4 gap-6">
-        {data.map((item: StatsItem) => (
-          <StatsCard key={item.id} title={item.title} value={item.value} />
-        ))}
-      </div>
+      <StatsGrid stats={data || []} />
+
+      <UsersChart data={analyticsQuery.data || []} />
     </MainLayout>
   );
 }

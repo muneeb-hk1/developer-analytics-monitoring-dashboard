@@ -21,31 +21,31 @@
       "value": "98%"
     }
   ],
-  "userAnalytics":[
-  {
-    "id": 1,
-    "month": "Jan",
-    "users": 400
-  },
-  {
-    "id": 2,
-    "month": "Feb",
-    "users": 900
-  },
-  {
-    "id": 3,
-    "month": "Mar",
-    "users": 1200
-  },
-  {
-    "id": 4,
-    "month": "Apr",
-    "users": 700
-  },
-  {
-    "id": 5,
-    "month": "May",
-    "users": 1500
-  }
-]
+  "userAnalytics": [
+    {
+      "id": 1,
+      "month": "Jan",
+      "users": 400
+    },
+    {
+      "id": 2,
+      "month": "Feb",
+      "users": 900
+    },
+    {
+      "id": 3,
+      "month": "Mar",
+      "users": 1200
+    },
+    {
+      "id": 4,
+      "month": "Apr",
+      "users": 2100
+    },
+    {
+      "id": 5,
+      "month": "May",
+      "users": 1500
+    }
+  ]
 }

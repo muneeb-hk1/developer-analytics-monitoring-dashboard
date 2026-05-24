@@ -9,10 +9,8 @@ export type AnalyticsItem = {
 };
 
 export function useUsersAnalytics() {
-
   return useQuery<AnalyticsItem[]>({
     queryKey: ["users-analytics"],
     queryFn: getUsersAnalytics,
   });
-
-}  
+}

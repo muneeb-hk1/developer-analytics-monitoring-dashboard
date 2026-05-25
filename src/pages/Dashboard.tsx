@@ -31,7 +31,7 @@ function Dashboard() {
   if (isLoading) {
     return (
       <MainLayout>
-        <h1 className="text-3xl font-bold mb-6">Developer Analytics</h1>
+        <h1 className="text-3xl font-bold mb-6">Developer Analytics Board</h1>
         <StatsGridSkeleton />
       </MainLayout>
     );

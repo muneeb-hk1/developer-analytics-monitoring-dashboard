@@ -12,7 +12,7 @@ type Props = {
 
 function StatsGrid({ stats }: Props) {
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid grid-cols-4 gap-6 !py-4">
       {stats.map((item) => (
         <StatsCard key={item.id} title={item.title} value={item.value} />
       ))}
